@@ -25,7 +25,7 @@ gulp.task('browsersync', function() {
         /*server: {
             baseDir: "./"
         }*/
-        proxy: "http://starter-theme-test.dev"
+        proxy: "http://local.dev"
     });
     gulp.watch(['*.php', 'less/*.less', 'inc/js/*.js'], {cwd: './'}, reload);
 });
