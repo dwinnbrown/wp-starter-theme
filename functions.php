@@ -1,4 +1,4 @@
- <?php
+<?php
 function load_styles() {
     wp_enqueue_style( 'stylesheet', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/inc/bootstrap-grid.css');

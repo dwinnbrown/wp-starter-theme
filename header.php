@@ -16,12 +16,12 @@
                 <nav class="site-nav">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <div class="site-title">
+                            <div class="left-nav">
                                 <a href="<?php echo esc_url( home_url() ) ?>" title="<?php bloginfo('name'); ?>">
                                     <h1><?php bloginfo('name'); ?></h1>
                                 </a>
                             </div>
-                            <div class="menu">
+                            <div class="right-nav">
                                 <?php wp_nav_menu(array(
                                     'container' => false,
                                     'theme_location' => 'main-menu',
@@ -32,9 +32,3 @@
                 </nav>
         </header>
         <div class="site-content">
-
-
-
-
-
-

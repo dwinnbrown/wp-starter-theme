@@ -10,7 +10,6 @@ gulp.task('watch-less', function() {
     gulp.watch('./less/*.less' , ['compile-less']);
 });
 
-
 gulp.task('compile-less', function() {
     gulp.src('./less/main.less')
         .pipe(less())
@@ -19,16 +18,14 @@ gulp.task('compile-less', function() {
         .pipe(gulp.dest('./'));
 });
 
-
 gulp.task('browsersync', function() {
     browserSync({
         /*server: {
             baseDir: "./"
         }*/
-        proxy: "http://local.dev"
+        proxy: "http://starter-theme-demo.dev"
     });
     gulp.watch(['*.php', 'less/*.less', 'inc/js/*.js'], {cwd: './'}, reload);
 });
-
 
 gulp.task('default', ['browsersync', 'compile-less', 'watch-less']);
