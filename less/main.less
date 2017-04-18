@@ -1,0 +1,59 @@
+/*!
+Theme Name: Wordpress Starter Theme
+Theme URI: http://www.winn-brown.co.uk
+Author: Dylan Winn-Brown
+Author URI: http://www.winn-brown.co.uk
+Description: Dylan Winn-Brown starter theme
+Version: 1.0.0
+*/
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// General
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  padding: 20px;
+  background: white;
+}
+.site-container {
+  background-color: #efefef;
+}
+.site-content {
+  margin:30px 0;
+}
+footer {
+  background: #fff;
+}
+
+// Nav
+nav {
+  background-color: white;
+  .nav-wrapper {
+    display: table;
+    width:100%;
+  }
+  .site-title {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .menu{
+    display: table-cell;
+    vertical-align: middle;
+    ul {
+      list-style: none;
+      text-align: right;
+      float: right;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        padding:0 10px;
+      }
+    }
+  }
+}
