@@ -14,4 +14,10 @@ jQuery(document).ready(function () {
         window.location = linkLocation;
     }
 
+    jQuery('.dropdown-toggle').click(function() {
+        jQuery(this).toggleClass("fa-bars");
+        jQuery(this).toggleClass("fa-times");
+        jQuery(this).next().toggleClass("dropdown-open");
+    });
+
 });

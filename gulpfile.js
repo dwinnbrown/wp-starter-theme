@@ -23,7 +23,7 @@ gulp.task('browsersync', function() {
         /*server: {
             baseDir: "./"
         }*/
-        proxy: "http://starter-theme-demo.dev"
+        proxy: "http://startertheme.dev"
     });
     gulp.watch(['*.php', 'less/*.less', 'inc/js/*.js'], {cwd: './'}, reload);
 });
